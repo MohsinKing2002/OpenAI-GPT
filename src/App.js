@@ -4,7 +4,7 @@ import { Configuration, OpenAIApi } from "openai";
 import "./App.css";
 import Options from "./components/Options";
 import Translation from "./components/Translation";
-import { OPEN_AI_KEY } from "./config.env";
+import { OPEN_AI_KEY } from "./config";
 
 function App() {
   const [option, setOption] = useState({});

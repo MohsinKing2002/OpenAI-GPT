@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-import { OPEN_AI_KEY } from "../config.env";
+import { OPEN_AI_KEY } from "../config";
 
 const GenerateImage = () => {
   //open api
