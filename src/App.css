@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #202124;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+}
+
+.box{
+  color: lightblue;
+  border: 1px solid lightblue;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 1px 2px 1px white;
+  margin: 20px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.box:hover{
+  background-color: white;
+  color: black;
+  box-shadow: inherit;
+}
+
+.data-box{
+  padding: 5px;
+  text-align: center;
+}
+
+.data-box input, .data-box button, .result button{
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 5px 0;
+  width: 90%;
+}
+
+.data-box input{
+  margin-bottom: 15px;
+}
+
+.data-box button, .result button{
+  background-color: lightblue;
+  cursor: pointer;
+}
+.data-box button:hover{
+  background-color: rgb(115, 202, 230);
+}
+
+.data-box img{
+  margin-top: 10px;
+  height: 35vh;
+  border-radius: 8px;
+}
+
+.options{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.title{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 5px 0;
+}
+.para{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.result{
+  width: 40vw;
+  margin: auto;
+}
+
+.result textarea{
+  padding: 15px;
+    background-color: #2c2e32;
+    outline: none;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    border: none;
+    resize: none;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.result button{
+  width: 100%;
+  margin: 2rem 0;
+  margin-top: 18px;
+}
+
+.result .response{
+  width: 100%;
+  margin: auto;
+  background-color: #2c2e32;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .result{
+    width: 95% !important;
+  }
+  .options{
+    padding: 5px;
+    grid-template-columns: inherit;
+  }
+}
